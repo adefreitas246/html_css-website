@@ -136,6 +136,21 @@
         flex-direction: column;
         padding: 40px 30px;
     }
+
+    .contact-section {
+        flex-direction: column;
+        gap: 40px;
+        padding: 20px 30px 50px;
+    }
+
+    .contact-details,
+    .quote-container {
+        width: 100%;
+    }
+
+    .contact-intro {
+        padding: 35px 20px;
+    }
 }
 
 
@@ -236,6 +251,20 @@
     .cta-btn {
         width: 100%;
         text-align: center;
+    }
+
+
+    .contact-section {
+        padding: 15px 20px 40px;
+    }
+
+    .contact-details h2,
+    .quote-container h2 {
+        font-size: 22px;
+    }
+
+    .form-btn {
+        width: 100%;
     }
 
 
