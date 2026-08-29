@@ -1,202 +1,151 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Contact | TrapTech Solutions</title>
 
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/responsive.css">
-</head>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+  </head>
 
-<body>
-
+  <body>
     <header>
+      <a href="../index.html" class="logo">
+        <picture>
+          <source
+            srcset="../assets/images/traptech-logo.webp"
+            type="image/webp"
+          />
 
-        <a href="../index.html" class="logo">
-            <picture>
-                <source
-                    srcset="../assets/images/traptech-logo.webp"
-                    type="image/webp"
-                >
+          <img
+            src="../assets/images/traptech-logo.jpeg"
+            alt="TrapTech Solutions Logo"
+          />
+        </picture>
+      </a>
 
-                <img
-                    src="../assets/images/traptech-logo.jpeg"
-                    alt="TrapTech Solutions Logo"
-                >
-            </picture>
-        </a>
+      <!-- CSS-only burger menu -->
+      <input type="checkbox" id="menu-toggle" />
 
-        <!-- CSS-only burger menu -->
-        <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="menu-icon" aria-label="Open navigation">
+        ☰
+      </label>
 
-        <label
-            for="menu-toggle"
-            class="menu-icon"
-            aria-label="Open navigation">
-            ☰
-        </label>
-
-        <nav class="nav-menu">
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
-
     <main>
+      <!-- Hero -->
+      <section class="hero">
+        <div class="hero-content">
+          <h1>CONTACT US</h1>
 
-        <!-- Hero -->
-        <section class="hero">
+          <p>
+            Get in touch with TrapTech Solutions for product inquiries, pricing
+            and quote requests.
+          </p>
+        </div>
+      </section>
 
-            <div class="hero-content">
+      <!-- Introduction -->
+      <section class="contact-intro">
+        <div class="info-header">
+          <h2>GET IN TOUCH</h2>
+        </div>
 
-                <h1>CONTACT US</h1>
+        <p>
+          We'd love to hear from you. Contact us directly or complete the quote
+          form below.
+        </p>
+      </section>
 
-                <p>
-                    Get in touch with TrapTech Solutions for
-                    product inquiries, pricing and quote requests.
-                </p>
+      <!-- Contact Details + Form -->
+      <section class="contact-section">
+        <!-- Contact Information -->
+        <div class="contact-details">
+          <h2>CONTACT INFORMATION</h2>
 
+          <div class="contact-item">
+            <h3>Phone</h3>
+            <p>(246) 555-0123</p>
+          </div>
+
+          <div class="contact-item">
+            <h3>Email</h3>
+            <p>info@traptechsolutions.com</p>
+          </div>
+
+          <div class="contact-item">
+            <h3>Location</h3>
+            <p>Barbados</p>
+          </div>
+
+          <div class="contact-item">
+            <h3>Business Hours</h3>
+            <p>Monday - Friday: 8:00 AM - 4:30 PM</p>
+          </div>
+        </div>
+        <!-- Quote Form -->
+        <div class="quote-container">
+          <h2>REQUEST A QUOTE</h2>
+          <form class="quote-form">
+            <div class="form-group">
+              <label for="full-name">Full Name</label>
+
+              <input type="text" id="full-name" name="full-name" required />
             </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
 
-        </section>
-
-
-        <!-- Introduction -->
-        <section class="contact-intro">
-
-            <div class="info-header">
-                <h2>GET IN TOUCH</h2>
+              <input type="email" id="email" name="email" required />
             </div>
-
-            <p>
-                We'd love to hear from you. Contact us directly
-                or complete the quote form below.
-            </p>
-
-        </section>
-
-
-        <!-- Contact Details + Form -->
-        <section class="contact-section">
-
-            <!-- Contact Information -->
-            <div class="contact-details">
-
-                <h2>CONTACT INFORMATION</h2>
-
-                <div class="contact-item">
-                    <h3>Phone</h3>
-                    <p>(246) 555-0123</p>
-                </div>
-
-                <div class="contact-item">
-                    <h3>Email</h3>
-                    <p>info@traptechsolutions.com</p>
-                </div>
-
-                <div class="contact-item">
-                    <h3>Location</h3>
-                    <p>Barbados</p>
-                </div>
-
-                <div class="contact-item">
-                    <h3>Business Hours</h3>
-                    <p>Monday - Friday: 8:00 AM - 4:30 PM</p>
-                </div>
-
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" required />
             </div>
-            <!-- Quote Form -->
-            <div class="quote-container">
-                <h2>REQUEST A QUOTE</h2>
-                <form class="quote-form">
+            <div class="form-group">
+              <label for="product">Product</label>
 
-                    <div class="form-group">
-                        <label for="full-name">Full Name</label>
+              <select id="product" name="product" required>
+                <option value="">Select a product</option>
 
-                        <input
-                            type="text"
-                            id="full-name"
-                            name="full-name"
-                            required
-                        >
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email Address</label>
+                <option value="small-grease-trap">Small Grease Trap</option>
 
-                        <input
-                            type="email"
-                            id="email"
-                            name="email"
-                            required
-                        >
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">Phone Number</label>
-                        <input
-                            type="tel"
-                            id="phone"
-                            name="phone"
-                            required
-                        >
-                    </div>
-                    <div class="form-group">
-                        <label for="product">Product</label>
+                <option value="large-grease-trap">Large Grease Trap</option>
 
-                        <select
-                            id="product"
-                            name="product"
-                            required
-                        >
-                            <option value="">
-                                Select a product
-                            </option>
+                <option value="manhole">Manhole</option>
 
-                            <option value="small-grease-trap">
-                                Small Grease Trap
-                            </option>
-
-                            <option value="large-grease-trap">
-                                Large Grease Trap
-                            </option>
-
-                            <option value="manhole">
-                                Manhole
-                            </option>
-
-                            <option value="access-cover">
-                                Access Cover
-                            </option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea
-                            id="message"
-                            name="message"
-                            rows="6"
-                            placeholder="Tell us about your project or requirements..."
-                            required
-                        ></textarea>
-                    </div>
-                    <button type="submit" class="form-btn">
-                        Request a Quote
-                    </button>
-                </form>
+                <option value="access-cover">Access Cover</option>
+              </select>
             </div>
-        </section>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="6"
+                placeholder="Tell us about your project or requirements..."
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="form-btn">Request a Quote</button>
+          </form>
+        </div>
+      </section>
     </main>
     <footer id="footer">
-        <p class="footer-content">
-            &copy; 2026 TrapTech Solutions. All rights reserved.
-        </p>
+      <p class="footer-content">
+        &copy; 2026 TrapTech Solutions. All rights reserved.
+      </p>
     </footer>
-</body>
+  </body>
 </html>
