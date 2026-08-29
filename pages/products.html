@@ -9,12 +9,20 @@
     </head>
     <body>
         <header>
-            <picture>
-                <source srcset="images/traptech-logo.webp" type="image/webp">
-                <img src="images/traptech-logo.png" alt="TrapTech Solutions Logo">
-            </picture>
+            <a href="index.html" class="logo">
+                <picture>
+                    <source srcset="assets/images/traptech-logo.webp" type="image/webp">
+                    <img src="assets/images/traptech-logo.png" alt="TrapTech Solutions Logo">
+                </picture>
+            </a>
 
-            <nav>
+            <input type="checkbox" id="menu-toggle">
+
+            <label for="menu-toggle" class="menu-icon" aria-label="Open navigation">
+                ☰
+            </label>
+
+            <nav class="nav-menu">
                 <ul>
                     <li><a href="../index.html">Home</a></li>
                     <li><a href="./about.html">About</a></li>
@@ -26,39 +34,49 @@
 
         <main>
             <section class="hero">
-                <h1>OUR PRODUCTS</h1>
-                <p>Reliable drainage products manufactured for your needs.</p>
+                <div class="hero-content">
+                    <h1>Our Products</h1>
+                    <p>Reliable drainage products manufactured for your needs.</p>
+                </div>
             </section>
+            <div class="info-header">
+                <h2>Product Categories</h2>
+            </div>
             <section class="products">
-                <h2>PRODUCT CATEGORIES</h2>
-                <div class="product-grid">
-                    <div class="product-card">
-                        <img src="images/small-grease-trap.jpg" alt="Small Grease Trap">
-                        <h3>Small Grease Trap</h3>
-                        <p>Compact grease traps designed for smaller commercial kitchens, cafés and food preparation areas.</p>
-                        <a href="./product-details.html">View Details</a>
-                    </div>
-                    <div class="product-card">
-                        <img src="images/large-grease-trap.jpg" alt="Large Grease Trap">
-                        <h3>Large Grease Trap</h3>
-                        <p>High-capacity grease traps designed for larger commercial kitchens and high-volume food operations.</p>
-                        <a href="./product-details.html">View Details</a>
-                    </div>
-                    <div class="product-card">
-                        <img src="images/manholes.jpg" alt="Manholes / Access Covers">
-                        <h3>Manholes / Access Covers</h3>
-                        <p>Durable access manholes manufactured for drainage systems and maintenance access.</p>
-                        <a href="./product-details.html">View Details</a>
-                    </div>
+                <div class="product">
+                    <img src="../assets/images/product-1.jpeg" alt="Small Grease Trap">
+                    <h3>Small Grease Trap</h3>
+                    <p>Compact grease traps designed for smaller commercial kitchens, cafés and food preparation areas.</p>
+                    <a href="./product-details.html">View Details</a>
+                </div>
+                <div class="product">
+                    <img src="../assets/images/product-2.jpeg" alt="Large Grease Trap">
+                    <h3>Large Grease Trap</h3>
+                    <p>High-capacity grease traps designed for larger commercial kitchens and high-volume food operations.</p>
+                    <a href="./product-details.html">View Details</a>
+                </div>
+                <div class="product">
+                    <img src="../assets/images/product-4.jpeg" alt="Manholes / Access Covers">
+                    <h3>Manholes / Access Covers</h3>
+                    <p>Durable access manholes manufactured for drainage systems and maintenance access.</p>
+                    <a href="./product-details.html">View Details</a>
                 </div>
             </section>
             <section class="cta">
-                <h2>Need the right grease trap for your project?</h2>
-                <a href="./contact.html" class="btn">Request a Quote</a>
+                <div class="cta-content">
+                    <div class="cta-text">
+                        <h2>Need the right grease trap for your project?</h2>
+                        <p>Contact us today to request a quote or learn more about our products.</p>
+                    </div>
+
+                    <div class="cta-action">
+                        <a href="pages/contact.html" class="cta-btn">Request Quote</a>
+                    </div>
+                </div>
             </section>
         </main>
+        <footer id="footer">
+            <p class="footer-content">&copy; 2026 TrapTech Solutions. All rights reserved.</p>
+        </footer>
     </body>
-    <footer id="footer">
-        <p>&copy; 2026 TrapTech Solutions. All rights reserved.</p>
-    </footer>
 </html>

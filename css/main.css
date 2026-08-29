@@ -1,55 +1,77 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;800&display=swap');
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
+
+body {
+    color: #1F2937;
+}
+
+.logo img {
+    max-height: 55px;
+    width: auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* HEADER */
 
 header {
-    display: flex;
-    flex-direction: column;
-    background-color: #1F2937;
-    color: #ffffff;
+    height: 100px;
     padding: 20px;
-    text-align: center;
-}
-
-picture img {
-    display: block;
     background-color: #1F2937;
+    border: 4px solid #1F2937;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav ul {
     list-style-type: none;
-    display: block;
+    display: flex;
     justify-content: center;
-    padding: 0;
     gap: 20px;
-    background-color: #1F2937;
-}
-
-nav li {
-    display: inline;
 }
 
 nav a {
-    color: #ffffff;
-    background-color: #1F2937;
+    color: #E5E7EB;
     text-decoration: none;
-    font-weight: bold;
+    font-size: 18px;
 }
 
-.hero{
+/* HERO */
+
+.hero {
     display: flex;
-    flex-direction: column;
+    align-items: center;
     background-color: #1F2937;
     color: #ffffff;
-    padding: 50px 20px;
-    text-align: center;
+    padding: 70px;
+    gap: 40px;
 }
 
 .hero-content {
-    background-color: #1F2937;
+    width: 50%;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    font-weight: 800;
+    color: #F9FAF8;
+}
+
+.hero-content p {
+    font-size: 18px;
+    color: #E5E7EB;
 }
 
 .hero-btn {
@@ -64,59 +86,142 @@ nav a {
 }
 
 .hero-image {
-    background-color: #1F2937;
+    width: 50%;
+}
+
+.hero-image img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* PRODUCTS */
+
+.info-header h2 {
+    font-size: 36px;
+    font-weight: 800;
+    color: #1F2937;
+    text-align: center;
+    padding: 30px;
 }
 
 section.products {
     display: flex;
-    flex-direction: column;
-    color: #000000;
-    padding: 50px 20px;
+    padding: 20px 50px 60px;
+    gap: 20px;
     text-align: center;
+    flex-wrap: wrap;
 }
 
-section.why-choose-us {
+.product {
+    flex: 1;
+    padding: 30px 20px;
+    border: 2px solid #3882F6;
+    border-radius: 8px;
+}
+
+.product h3 {
+    margin-bottom: 15px;
+}
+
+/* TESTIMONIAL */
+
+.testimonials {
     display: flex;
-    flex-direction: column;
-    color: #000000;
+    justify-content: center;
     background-color: #E5E7EB;
     padding: 50px 20px;
-    text-align: center;
 }
 
-.why-choose-us u {
-    background-color: #E5E7EB;
+.testimonial-content {
+    max-width: 800px;
 }
+
+.testimonials p {
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+    color: #1F2937;
+}
+
+/* CTA */
 
 section.cta {
-    display: flex;
-    flex-direction: column;
-    color: #ffffff;
-    padding: 50px 20px;
+    padding: 60px 50px;
 }
 
 .cta-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+
     background-color: #3882F6;
-    padding: 50px 20px;
+    color: #ffffff;
+
+    padding: 30px 45px;
     border-radius: 5px;
+    gap: 30px;
+}
+
+.cta-text {
+    flex: 1;
+}
+
+.cta-text h2 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.cta-text p {
+    font-size: 14px;
+}
+
+.cta-action {
+    flex-shrink: 0;
 }
 
 .cta-btn {
     display: inline-block;
-    padding: 10px 20px;
-    margin-top: 20px;
+    padding: 8px 20px;
+
     background-color: #3882F6;
     color: #ffffff;
+
     text-decoration: none;
-    font-weight: bold;
-    border: 1px solid #ffffff;
+    border: 2px solid #ffffff;
     border-radius: 5px;
+    font-weight: bold;
 }
 
-footer p {
+/* =========================================
+   About
+   ========================================= */
+section.content {
+    display: flex;
+    padding: 20px 50px 60px;
+    gap: 20px;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.approach {
+    flex: 1;
+    padding: 30px 20px;
+    border: 2px solid #3882F6;
+    border-radius: 8px;
+}
+
+.product h3 {
+    margin-bottom: 15px;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #1F2937;
+    color: #ffffff;
     padding: 20px;
     text-align: center;
-    color: #ffffff;
-    background-color: #1F2937;
 }
-

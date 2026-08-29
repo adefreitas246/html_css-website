@@ -9,12 +9,20 @@
     </head>
     <body>
         <header>
-            <picture>
-                <source srcset="images/traptech-logo.webp" type="image/webp">
-                <img src="images/traptech-logo.png" alt="TrapTech Solutions Logo">
-            </picture>
+            <a href="index.html" class="logo">
+                <picture>
+                    <source srcset="assets/images/traptech-logo.webp" type="image/webp">
+                    <img src="assets/images/traptech-logo.png" alt="TrapTech Solutions Logo">
+                </picture>
+            </a>
 
-            <nav>
+            <input type="checkbox" id="menu-toggle">
+
+            <label for="menu-toggle" class="menu-icon" aria-label="Open navigation">
+                ☰
+            </label>
+
+            <nav class="nav-menu">
                 <ul>
                     <li><a href="../index.html">Home</a></li>
                     <li><a href="./about.html">About</a></li>
@@ -26,35 +34,49 @@
 
         <main>
             <section class="hero">
-                <h1>ABOUT US</h1>
-                <p>Learn more about TrapTech Solutions and our commitment to providing high-quality drainage products.</p>
+                <div class="hero-content">
+                    <h1>About Us</h1>
+                    <p>Learn more about TrapTech Solutions and our commitment to providing high-quality drainage products.</p>
+                </div>
             </section>
-            <section class="content">
+            <div class="info-header">
                 <h2>Who We Are</h2>
+            </div>
+            <section class="content">
                 <p>TrapTech Solutions manufactures durable grease traps and access manholes for commercial and residential applications.</p>
             </section>
-            <section class="content">
+            <div class="info-header">
                 <h2>Our Approach</h2>
-                <div class="approach-item">
+            </div>
+            <section class="content">
+                <div class="approach">
                     <h3>Built for Durability</h3>
                     <p>Products are designed with practical construction and long-term use in mind.</p>
                 </div>
-                <div class="approach-item">
+                <div class="approach">
                     <h3>Multiple Sizes</h3>
                     <p>Our range includes compact and high-capacity solutions.</p>
                 </div>
-                <div class="approach-item">
+                <div class="approach">
                     <h3>Quality Focused</h3>
                     <p>We focus on producing reliable products for demanding environments.</p>
                 </div>
             </section>
             <section class="cta">
-                <h2>Need the right grease trap for your project?</h2>
-                <a href="./contact.html" class="btn">Request a Quote</a>
+                <div class="cta-content">
+                    <div class="cta-text">
+                        <h2>Need the right grease trap for your project?</h2>
+                        <p>Contact us today to request a quote or learn more about our products.</p>
+                    </div>
+
+                    <div class="cta-action">
+                        <a href="pages/contact.html" class="cta-btn">Request Quote</a>
+                    </div>
+                </div>
             </section>
         </main>
+        <footer id="footer">
+            <p class="footer-content">&copy; 2026 TrapTech Solutions. All rights reserved.</p>
+        </footer>
     </body>
-    <footer id="footer">
-        <p>&copy; 2026 TrapTech Solutions. All rights reserved.</p>
-    </footer>
 </html>

@@ -1,0 +1,242 @@
+/* =========================================
+   TABLET / MOBILE
+   ========================================= */
+
+#menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    color: #F9FAF8;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
+/* =========================================
+   TABLET - 768px
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    /* HEADER */
+
+    header {
+        height: 80px;
+        padding: 15px 20px;
+        position: relative;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: 76px;
+        left: 0;
+        width: 100%;
+        background-color: #1F2937;
+        padding: 20px 0;
+        z-index: 1000;
+    }
+
+    .nav-menu ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .nav-menu a {
+        font-size: 18px;
+    }
+
+    #menu-toggle:checked ~ .nav-menu {
+        display: block;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        flex-direction: column;
+        padding: 50px 30px;
+        gap: 30px;
+    }
+
+    .hero-content {
+        width: 100%;
+    }
+
+    .hero-content h1 {
+        font-size: 40px;
+    }
+
+    .hero-content p {
+        font-size: 18px;
+    }
+
+    .hero-image {
+        width: 100%;
+    }
+
+
+    /* PRODUCTS */
+
+    .info-header h2 {
+        font-size: 32px;
+        padding: 25px 20px;
+    }
+
+    section.products {
+        flex-direction: column;
+        padding: 20px 30px 50px;
+        gap: 20px;
+    }
+
+    .product {
+        width: 100%;
+    }
+
+
+    /* TESTIMONIAL */
+
+    .testimonials {
+        padding: 50px 30px;
+    }
+
+    .testimonials p {
+        font-size: 30px;
+    }
+
+
+    /* CTA */
+
+    section.cta {
+        padding: 50px 30px;
+    }
+
+    .cta-content {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 30px;
+    }
+
+    .cta-action {
+        margin-top: 10px;
+    }
+
+
+    /* CONTACT / OTHER FLEX CONTENT */
+
+    .content {
+        flex-direction: column;
+        padding: 40px 30px;
+    }
+}
+
+
+/* =========================================
+   SMALL MOBILE - 480px
+   ========================================= */
+
+@media (max-width: 480px) {
+
+    /* Logo */
+    .logo img {
+        max-height: 45px;
+    }
+
+    /* HEADER */
+
+    header {
+        height: 75px;
+        padding: 12px 15px;
+    }
+
+    .nav-menu {
+        top: 71px;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        padding: 40px 20px;
+        gap: 25px;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+        line-height: 1.1;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .hero-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+
+    /* PRODUCTS */
+
+    .info-header h2 {
+        font-size: 28px;
+        padding: 25px 15px;
+    }
+
+    section.products {
+        padding: 15px 20px 40px;
+    }
+
+    .product {
+        padding: 25px 15px;
+    }
+
+
+    /* TESTIMONIAL */
+
+    .testimonials {
+        padding: 40px 20px;
+    }
+
+    .testimonials p {
+        font-size: 25px;
+    }
+
+
+    /* CTA */
+
+    section.cta {
+        padding: 40px 20px;
+    }
+
+    .cta-content {
+        padding: 25px 20px;
+    }
+
+    .cta-text h2 {
+        font-size: 18px;
+    }
+
+    .cta-text p {
+        font-size: 14px;
+    }
+
+    .cta-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+        padding: 18px 15px;
+    }
+}
