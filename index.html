@@ -4,6 +4,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Home | TrapTech Solutions</title>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/responsive.css">
     </head>
     <body>
         <header>
@@ -11,7 +13,6 @@
                 <source srcset="images/traptech-logo.webp" type="image/webp">
                 <img src="images/traptech-logo.png" alt="TrapTech Solutions Logo">
             </picture>
-
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -22,13 +23,20 @@
             </nav>
         </header>
 
-        <main>
+        <main id="main-content">
             <section class="hero">
-                <h1>Grease Traps Built for Every Environment</h1>
-                <p>Durable grease traps and access manholes manufactured for residential, commercial and industrial applications.</p>
-                <a href="pages/products.html" class="btn">View Products</a>
-                <a href="pages/contact.html" class="btn btn-secondary">Request a Quote</a>
-                <img src="images/grease-trap.jpg" alt="Large Grease Trap">
+                <div class="hero-content">
+                    <h1>Grease Traps Built for Every Environment</h1>
+                    <p>Durable grease traps and access manholes manufactured for residential, commercial and industrial applications.</p>
+                    <!-- <a href="pages/products.html" class="btn">View Products</a> -->
+                    <a href="pages/contact.html" class="hero-btn btn-secondary">Request a Quote</a>
+                </div>
+                <div class="hero-image">
+                    <picture>
+                        <source srcset="images/grease-trap.webp" type="image/webp">
+                        <img src="images/grease-trap.jpg" alt="Grease Trap">
+                    </picture>
+                </div>
             </section>
             <section class="products">
                 <h2>Our Products</h2>
@@ -46,20 +54,24 @@
                 </div>
             </section>
             <section class="why-choose-us">
-                <h2>Why Choose Us</h2>
+                <p>Testimonials by customers</p>
+                <!-- <h2>Why Choose Us</h2>
                 <ul>
                     <li>Durable construction</li>
                     <li>Multiple sizes</li>
                     <li>Reliable quality</li>
-                </ul>
+                </ul> -->
             </section>
             <section class="cta">
-                <h2>Need the right grease trap for your project?</h2>
-                <a href="pages/contact.html" class="btn">Request a Quote</a>
+                <div class="cta-content">
+                    <h2>Need the right grease trap for your project?</h2>
+                    <p>Contact us today to request a quote or learn more about our products.</p>
+                    <a href="pages/contact.html" class="cta-btn btn-secondary">Request a Quote</a>
+                </div>
             </section>
         </main>
     </body>
-    <footer>
-        <p>&copy; 2026 TrapTech Solutions. All rights reserved.</p>
+    <footer id="footer">
+        <p class="footer-content">&copy; 2026 TrapTech Solutions. All rights reserved.</p>
     </footer>
 </html>

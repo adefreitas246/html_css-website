@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: roboto, sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: #1F2937;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+picture img {
+    display: block;
+    background-color: #1F2937;
+}
+
+nav ul {
+    list-style-type: none;
+    display: block;
+    justify-content: center;
+    padding: 0;
+    gap: 20px;
+    background-color: #1F2937;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    color: #ffffff;
+    background-color: #1F2937;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    background-color: #1F2937;
+    color: #ffffff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.hero-content {
+    background-color: #1F2937;
+}
+
+.hero-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #3882F6;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.hero-image {
+    background-color: #1F2937;
+}
+
+section.products {
+    display: flex;
+    flex-direction: column;
+    color: #000000;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+section.why-choose-us {
+    display: flex;
+    flex-direction: column;
+    color: #000000;
+    background-color: #E5E7EB;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.why-choose-us u {
+    background-color: #E5E7EB;
+}
+
+section.cta {
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    padding: 50px 20px;
+}
+
+.cta-content {
+    background-color: #3882F6;
+    padding: 50px 20px;
+    border-radius: 5px;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #3882F6;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+}
+
+footer p {
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #1F2937;
+}
+
