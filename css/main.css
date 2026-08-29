@@ -26,6 +26,7 @@ body {
 .logo img {
     max-height: 55px;
     width: auto;
+    border-radius: 5px;
 }
 
 img {
@@ -136,12 +137,13 @@ section.products {
 
 .product {
     flex: 1;
-    padding: 30px 20px;
-    border: 2px solid #3882F6;
-    border-radius: 8px;
 }
 
-.product img {
+.product-image {
+    width: 100%;
+    height: 100;
+    padding: 0px;
+    border: 2px solid #3882F6;
     border-radius: 5px;
 }
 
